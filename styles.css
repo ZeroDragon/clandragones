@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "exocet-light";
+  src: url("/exocet.ttf") format("woff"), url("/exocet.ttf") format("opentype"), url("/exocet.ttf") format("truetype");
+}
+:root {
+  --primary: #f2994a;
+  --fill: #444654;
+  --fillWhiten: #64677c;
+  --fillDarken: #30313b;
+  --white: #fafafa;
+  --whiteDarken: #afafaf;
+  --secondary: #4ea9d0;
+  --contrast: #e63946;
+}
+*:not(ul,
+ol,
+li) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--fillDarken);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/scales.png");
+  filter: grayscale(100%);
+  opacity: 0.2;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+a:hover {
+  color: var(--contrast);
+}
+a,
+p.link {
+  transition: all 300ms linear;
+}
+header {
+  position: relative;
+  border-bottom: 1px solid var(--secondary);
+  background-color: #000;
+}
+header:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://clandragones.com/images/header.jpg") no-repeat;
+  background-position: center 30%;
+  background-size: cover;
+  opacity: 0.3;
+}
+header .homeTitle {
+  font-family: 'exocet-light', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+header .homeTitle img {
+  width: 150px;
+  margin-bottom: 5px;
+}
+header .homeTitle span {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+nav.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+nav.navigation ul,
+nav.navigation li {
+  margin: 0;
+  padding: 0;
+}
+nav.navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+nav.navigation a {
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 6px;
+  background-color: var(--contrast);
+  min-width: 110px;
+  text-align: center;
+  color: var(--white);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+nav.navigation a:hover {
+  padding-top: 20px;
+}
+footer {
+  border-top: 1px solid var(--secondary);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'exocet-light', sans-serif;
+}
+h1 {
+  color: var(--primary);
+}
+h2 {
+  color: var(--secondary);
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.content .navigator {
+  display: flex;
+  justify-content: space-between;
+}
+.content > * {
+  display: block;
+  margin: 5px 0;
+}
+.content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.content h2 {
+  border-bottom: 2px solid var(--fillWhiten);
+}
+.content p {
+  line-height: 1.3em;
+}
+.content p > code {
+  background-color: var(--fillWhiten);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.content blockquote {
+  position: relative;
+  padding: 4px 20px;
+  opacity: 0.5;
+}
+.content blockquote:before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+}
+.content pre {
+  width: 100%;
+  background-color: var(--fillDarken);
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: auto;
+  display: flex;
+  line-height: 1.6em;
+}
+.content pre code {
+  font-size: 1.1em;
+  max-width: 10px;
+}
+.center {
+  text-align: center;
+}
+.in-memoriam img {
+  max-height: 400px;
+}
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0;
+}
+.blogList .card {
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.blogList .card:hover p.link {
+  text-decoration: underline;
+  color: var(--contrast);
+}
+.blogList .blogContent {
+  padding: 10px;
+  background-color: rgba(68,70,84,0.9);
+  border-radius: 10px;
+  width: 100%;
+}
+.blogList .author {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary);
+}
+.blogList .title,
+.blogList .cta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.blogList .postTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blogList .excerpt {
+  color: var(--whiteDarken);
+  margin-bottom: 10px;
+}
+.blogList .date {
+  font-size: 12px;
+  color: var(--primary);
+  text-align: right;
+}
+.blogList p.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--secondary);
+}
+.blogList a.megaLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .blogList .card {
+    flex: 1 0 calc(100% - 20px);
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .blogList .card {
+    flex: 1 0 calc(50% - 20px);
+  }
+}
+@media (min-width: 801px) {
+  .blogList .card {
+    flex: 1 0 calc((100% / 3) - 20px);
+  }
+}

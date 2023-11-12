@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href='https://clandragones.com/rss.xsl' type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <title>Clan Dragones</title>
+  <subtitle>El sitio del Clan</subtitle>
+  <link href="https://clandragones.com/atom.xml" rel="self"/>
+  <link href="https://clandragones.com"/>
+  <updated></updated>
+  <id>https://clandragones.com</id>
+  <author>
+    <name>Zero</name>
+    <uri>https://floresbenavides.com</uri>
+  </author>
+</feed>
