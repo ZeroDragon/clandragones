@@ -1,0 +1,11 @@
+siteName: Clan Dragones
+siteDesc: El sitio del Clan
+author:
+  name: Zero
+  site: https://floresbenavides.com
+siteUrl: https://clandragones.com
+cname: clandragones.com
+pages:  # this node is optional
+  Inicio: /
+  In memoriam: /in-memoriam
+  El dojo: /dojo
