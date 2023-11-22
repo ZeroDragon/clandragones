@@ -5,7 +5,7 @@ Este es el sitio oficial del Clan Dragones. Los únicos, originales e incomparab
 
 <br/>
 
-## Nuesta historia
+## Nuestra historia
 > Si, somos los mismos desde el año 2000.
 
 En el año 2000 de esta era formamos el Clan Dragones para formalizar el grupo de amigos que nos juntábamos para jugar videojuegos por internet.
