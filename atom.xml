@@ -22,4 +22,16 @@
 </content>
     <summary></summary>
   </entry>
+  <entry>
+    <title>Biernvenidos al blog del clan</title>
+    <link href="https://clandragones.com/posts/el-segundo-post"/>
+    <id>https://clandragones.com/posts/el-segundo-post</id>
+    <published>2025-07-28T00:00:00.000Z</published>
+    <updated>2025-07-28T00:00:00.000Z</updated>
+    <media:thumbnail url="https://clandragones.com/undefined"></media:thumbnail>
+    <content type="html">&lt;h1&gt;Bienvenidos&lt;/h1&gt;
+&lt;p&gt;Que ondas&lt;/p&gt;
+</content>
+    <summary></summary>
+  </entry>
 </feed>
