@@ -1,5 +1,5 @@
 meta:
-  title: Biernvenidos al blog del clan
+  title: Bienvenidos al blog del clan
   date: 20250728
   author: Admin
   tags:
