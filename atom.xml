@@ -4,10 +4,22 @@
   <subtitle>El sitio del Clan</subtitle>
   <link href="https://clandragones.com/atom.xml" rel="self"/>
   <link href="https://clandragones.com"/>
-  <updated></updated>
+  <updated>Mon Jul 28 2025 00:00:00 GMT+0000 (Coordinated Universal Time)</updated>
   <id>https://clandragones.com</id>
   <author>
     <name>Zero</name>
     <uri>https://floresbenavides.com</uri>
   </author>
+  <entry>
+    <title>Biernvenidos al blog del clan</title>
+    <link href="https://clandragones.com/posts/el-primer-post"/>
+    <id>https://clandragones.com/posts/el-primer-post</id>
+    <published>2025-07-28T00:00:00.000Z</published>
+    <updated>2025-07-28T00:00:00.000Z</updated>
+    <media:thumbnail url="https://clandragones.com/undefined"></media:thumbnail>
+    <content type="html">&lt;h1&gt;Bienvenidos&lt;/h1&gt;
+&lt;p&gt;Este sitio etá en construcción&lt;/p&gt;
+</content>
+    <summary></summary>
+  </entry>
 </feed>
